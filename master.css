@@ -1,5 +1,4 @@
-html,
-body {
+html, body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -13,4 +12,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#inputs {
+  min-height: 100vh;
+  width: 200px;
+  background: red;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
