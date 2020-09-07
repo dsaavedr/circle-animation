@@ -153,4 +153,14 @@ function addChecks() {
     });
 }
 
+function openNav() {
+    document.getElementById("inputs").style.width = "250px";
+    document.getElementById("inputs").style.paddingLeft = "25px";
+}
+
+function closeNav() {
+    document.getElementById("inputs").style.width = "0";
+    document.getElementById("inputs").style.paddingLeft = "0";
+}
+
 init();
