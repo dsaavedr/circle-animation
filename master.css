@@ -42,6 +42,10 @@ html, body {
   margin-left: 50px
 }
 
+.closebtn:hover {
+  text-decoration: none;
+}
+
 .openbtn {
   position: absolute;
   top: 25px;

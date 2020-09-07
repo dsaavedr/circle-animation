@@ -31,7 +31,7 @@ function init() {
     WIDTH = window.innerWidth;
     // HEIGHT = window.innerHeight;
     if (WIDTH < r * 2) {
-        r = WIDTH / 2;
+        r = WIDTH / 2 - 20;
     } else {
         WIDTH = r * 2 + 50;
     }
