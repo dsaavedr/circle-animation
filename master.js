@@ -28,10 +28,14 @@ var requestAnimationFrame =
     window.msRequestAnimationFrame;
 
 function init() {
-    // WIDTH = window.innerWidth;
+    WIDTH = window.innerWidth;
     // HEIGHT = window.innerHeight;
-    WIDTH = r * 2 + 50;
-    HEIGHT = r * 2 + 50;
+    if (WIDTH < r * 2) {
+        r = WIDTH / 2;
+    } else {
+        WIDTH = r * 2 + 50;
+    }
+    HEIGHT = WIDTH;
 
     canvas.setAttribute("width", WIDTH);
     canvas.setAttribute("height", HEIGHT);
