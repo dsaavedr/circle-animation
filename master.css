@@ -23,15 +23,11 @@ html, body {
   z-index: 1;
   top: 0;
   left: 0;
-  background: black;
+  background: #222;
   overflow-x: hidden;
   padding-top: 40px;
   transition: 0.5s;
   color: gray;
-}
-
-.sidebar label:hover {
-  color: white;
 }
 
 .closebtn {
@@ -60,4 +56,8 @@ html, body {
 
 .form-check, .form-group {
   margin-top: 20px;
+}
+
+.form-check:hover, .form-group:hover {
+  color: white;
 }
