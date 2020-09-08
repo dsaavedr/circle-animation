@@ -8,11 +8,18 @@ var r = 250,
     cSin = "#fd2f24",
     cCos = "#fed800",
     c = "#ff6f01",
-    check1 = true,  // inner lines
-    check2 = true,  // poly lines
-    check3 = true,  // poly dots
-    check4 = false,  // outer dot
-    check5 = true,  // outer circle
+
+    // inner lines
+    check1 = false,
+    // poly lines
+    check2 = true,
+    // poly dots
+    check3 = false,
+    // outer dot
+    check4 = false,
+    // outer circle
+    check5 = true,
+
     n = 3,
     vertices,
     speed,
@@ -127,7 +134,7 @@ function addChecks() {
 
     for (var i = 1; i < 6; i++) {
         if (eval("check" + i)) {
-            c1.checked = true;
+            eval("c" + i + ".checked = true");
         }
     }
 
